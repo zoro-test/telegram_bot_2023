@@ -1,0 +1,14 @@
+{
+  "name": "Zoro Test",
+  "description": "This is my Test For Make Some Interesting Bot.",
+  "repository": "https://github.com/zoro-test/telegram_bot_2023",
+"stack": "container",
+  "env": {
+      "AUTH_USER": {
+        "description": "ID of Your Authorized User Who Used Bot As you Can."
+        "value": "6260522360"
+      }
+    
+  }
+}
+
