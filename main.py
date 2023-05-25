@@ -81,8 +81,9 @@ if __name__ == '__main__':
 
     # Commands
     app.add_handler(CommandHandler('start', start_command))
+    app.add_handler(CommandHandler('donate', donate_command))
     app.add_handler(CommandHandler('help', help_command))
-    app.add_handler(CommandHandler('custom', custom_command))
+    app.add_handler(CommandHandler('gen', custom_command))
 
     # Messages
     app.add_handler(MessageHandler(filters.TEXT, handle_message))
