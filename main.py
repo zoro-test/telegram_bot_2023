@@ -18,12 +18,9 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Lets us use the /donate command
 
 async def donate_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text('Donate — Team Straw Hat http://telegra.ph/Donate--Team-Straw-Hat-04-26')
 
-    await update.message.reply_text('Donate — TEAM Straw Hat 
 
- View http://telegra.ph/Donate--Team-Straw-Hat-04-26 For Donation❤️ 
-
-For more Contact — @Zoro_StrawHat7!  >_<') 
     
 
 # Lets us use the /help command
