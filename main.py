@@ -28,7 +28,11 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Lets us use the /gen command
 async def gen_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('This is a custom command, you can add whatever text you want here. im Edit this for Test')
-
+    
+    
+# Lets us use the /custom command
+async def custom_command(update: Update, context: ContestTypes.DEFAULT_TYPE):
+    await update.message.reply_text('This is Command You can Edit it')
 
 def handle_response(text: str) -> str:
     # Create your own response logic
@@ -83,8 +87,9 @@ if __name__ == '__main__':
     app.add_handler(CommandHandler('start', start_command))
     app.add_handler(CommandHandler('donate', donate_command))
     app.add_handler(CommandHandler('help', help_command))
-    app.add_handler(CommandHandler('gen', custom_command))
-
+    app.add_handler(CommandHandler('gen', gen_command))
+    app.add_handler(CommandHamdler('custom' custom_command))
+    
     # Messages
     app.add_handler(MessageHandler(filters.TEXT, handle_message))
 
