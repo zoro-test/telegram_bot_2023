@@ -33,7 +33,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Lets us use the /custom command
 async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text('This is a custom command, you can add whatever text you want here.')
+    await update.message.reply_text('This is a custom command, you can add whatever text you want here. im Edit this for Test')
 
 
 def handle_response(text: str) -> str:
