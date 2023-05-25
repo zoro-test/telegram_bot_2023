@@ -14,6 +14,17 @@ BOT_USERNAME: Final = '@StrawHat_TestBOT'
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('Hello there! I\'m a bot. What\'s up?')
 
+   
+# Lets us use the /donate command
+
+async def donate_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+
+    await update.message.reply_text('Donate — TEAM Straw Hat 
+
+ View http://telegra.ph/Donate--Team-Straw-Hat-04-26 For Donation❤️ 
+
+For more Contact — @Zoro_StrawHat7!  >_<') 
+    
 
 # Lets us use the /help command
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
