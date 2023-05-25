@@ -25,8 +25,8 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('Try typing anything and I will do my best to respond!')
 
 
-# Lets us use the /custom command
-async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+# Lets us use the /gen command
+async def gen_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('This is a custom command, you can add whatever text you want here. im Edit this for Test')
 
 
