@@ -31,7 +31,7 @@ async def gen_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     
 # Lets us use the /custom command
-async def custom_command(update: Update, context: ContestTypes.DEFAULT_TYPE):
+async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('This is Command You can Edit it')
 
 def handle_response(text: str) -> str:
