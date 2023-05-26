@@ -35,8 +35,7 @@ async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('This is Command You can Edit it')
     
 
-# Lets us use the /custom command
-@Client.on_message(filters.command(["mycode"]))
+# Lets us use the /mycode command
 async def mycode_command(update: Update, contextTypes.DEFAULT_TYPE):
     await update.message.reply_text(text="Genrate Your Code Please Wait...")
           password = "abcdefghijklmnopqrstuvwxyz1234567890".upper()
