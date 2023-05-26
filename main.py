@@ -12,27 +12,27 @@ BOT_USERNAME: Final = '@StrawHat_TestBOT'
 
 # Lets us use the /start command
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text('Hello there! I\'m a bot. What\'s up?')
+    await update.message.reply_text('Hello there! I am Test BOT!')
 
 
 # Lets us use the /donate command
 async def donate_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text('Donate — Team Straw Hat\N So Contact @Zoro_StrawHat7')
+    await update.message.reply_text('Donate — Team Straw Hat So Contact @Zoro_StrawHat7')
   
 
 # Lets us use the /help command
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text('Try typing anything and I will do my best to respond!')
+    await update.message.reply_text('This is help command')
 
 
 # Lets us use the /gen command
 async def gen_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text('This is a custom command, you can add whatever text you want here. im Edit this for Test')
+    await update.message.reply_text('This is gen Command')
     
     
 # Lets us use the /custom command
 async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text('This is Command You can Edit it')
+    await update.message.reply_text('This is custom Command You can Edit it as you want')
     
     
     # Create your own response logic
