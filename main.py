@@ -34,35 +34,7 @@ async def gen_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('This is Command You can Edit it')
     
-
-# Lets us use the /mycode command
-async def mycode_command(update: Update, contextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(text="Genrate Your Code Please Wait...")
-          password = "abcdefghijklmnopqrstuvwxyz1234567890".upper()
-
-    if len(update.command) > 1:
-
-        qw = update.text.split(" ", 1)[1]
-
-    else:
-
-        ST = ["6", "8"] 
-
-        qw = random.choice(ST)
-
-    limit = int(qw)
-
-    random_value = "".join(random.sample(password, limit))
-
-    txt = f"<b>Your Code Genrated Successfully ✅</b> {str()} \n<b>Your Code : </b> <code>{random_value}</code>"
-
-    btn = InlineKeyboardMarkup([[InlineKeyboardButton('Send Your Genrated Code Here', url='https://t.me/Demo')]])
-
-    await message.edit_text(text=txt, reply_markup=btn, parse_mode=enums.ParseMode.HTML)   
     
-    
-
-def handle_response(text: str) -> str:
     # Create your own response logic
     processed: str = text.lower()
 
@@ -117,7 +89,6 @@ if __name__ == '__main__':
     app.add_handler(CommandHandler('help', help_command))
     app.add_handler(CommandHandler('gen', gen_command))
     app.add_handler(CommandHandler('custom', custom_command))
-    app.add_handler(CommandHandler('mycode', mycode_command))
     
     # Messages
     app.add_handler(MessageHandler(filters.TEXT, handle_message))
